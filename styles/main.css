@@ -136,11 +136,12 @@ html, body, p, ul, li, button, textarea, input, h1, h2, h3, h4, h5, h6 {
 .nav__item {
   text-align: center; }
   .nav__item--active {
+    padding: 0 10px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 8px; }
 
 .nav__link:hover {
-  color: #9FADC2; }
+  color: #9fadc2; }
 
 .section {
   max-width: 1260px;
@@ -234,7 +235,7 @@ html, body, p, ul, li, button, textarea, input, h1, h2, h3, h4, h5, h6 {
     line-height: 27px; }
     .consultation__text > p:first-child {
       font-size: 24px;
-      color: #0075FF;
+      color: #0075ff;
       font-weight: bold;
       margin-bottom: 16px; }
 
@@ -246,23 +247,24 @@ html, body, p, ul, li, button, textarea, input, h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   max-width: 413px; }
   .form__input {
     height: 48px;
-    background: #F7F8FF;
-    border: 1px solid #FFFFFF;
+    background: #f7f8ff;
+    border: 1px solid #fff;
     border-radius: 8px;
     padding: 0 17px; }
     .form__input:not(:last-child) {
       margin-bottom: 16px; }
     .form__input:focus {
-      outline-color: #0075FF; }
+      outline-color: #0075ff; }
   .form__button {
     margin-top: 32px;
     height: 56px;
     color: #fff;
     font-size: bold;
-    background: #0075FF;
+    background: #0075ff;
     border: none;
     -webkit-box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
             box-shadow: 0 6px 23px rgba(0, 117, 255, 0.46);
@@ -319,11 +321,12 @@ html, body, p, ul, li, button, textarea, input, h1, h2, h3, h4, h5, h6 {
           justify-content: space-between; }
   .contact-us .form .text-area {
     border-radius: 8px;
-    background: #F7F8FF;
-    border: 1px solid #FFFFFF;
-    padding: 17px; }
+    background: #f7f8ff;
+    border: 1px solid #fff;
+    padding: 17px;
+    resize: none; }
     .contact-us .form .text-area:focus {
-      outline-color: #0075FF; }
+      outline-color: #0075ff; }
 
 .info {
   display: -webkit-box;
@@ -335,11 +338,11 @@ html, body, p, ul, li, button, textarea, input, h1, h2, h3, h4, h5, h6 {
   line-height: 27px; }
   .info__link {
     text-decoration: none;
-    color: #3E3E3E;
+    color: #3e3e3e;
     cursor: pointer; }
   .info__description {
     font-size: 14px;
-    color: #9FADC2;
+    color: #9fadc2;
     line-height: inherit;
     margin-bottom: 8px; }
   .info__info {
@@ -368,6 +371,9 @@ html, body, p, ul, li, button, textarea, input, h1, h2, h3, h4, h5, h6 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
+
+html {
+  scroll-behavior: smooth; }
 
 main {
   background-color: #fff; }
@@ -450,7 +456,8 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  __info, __form {
+  __info,
+  __form {
     margin: auto; } }
 
 /*# sourceMappingURL=main.css.map */
